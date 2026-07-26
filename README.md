@@ -6,6 +6,7 @@ only traversed branches. Missing arrays and objects are created automatically.
 ```ts
 import { setPath } from "@lucid-softworks/object-path-set";
 
+const state = { users: [{ name: "Grace" }] };
 const next = setPath(state, "users[0].name", "Ada");
 ```
 
